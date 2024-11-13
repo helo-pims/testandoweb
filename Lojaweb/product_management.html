@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Management Dashboard</title>
+    <link rel="stylesheet" href="productsM.css">
+</head>
+<body>
+
+    <div class="container">
+        <div id="user-info">
+            <h3>Welcome, <span id="username"></span> (<span id="role"></span>)</h3>
+            <button id="logout-btn">Logout</button>
+        </div>
+
+        <h2>Product Management Dashboard</h2>
+
+        <div id="filter-group">
+            <input type="text" id="search-bar" placeholder="Search products...">
+            <button id="reset-btn">Reset Product List</button>
+        </div>
+
+        <div id="pagination-controls">
+            <button id="prev-btn">Prev</button>
+            <span id="page-number">Page 1</span>
+            <button id="next-btn">Next</button>
+        </div>
+
+        <table id="product-list">
+            <thead>
+                <tr>
+                    <th><button id="sort-name">Product Name</button></th>
+                    <th><button id="sort-brand">Brand</button></th>
+                    <th><button id="sort-category">Category</button></th>
+                    <th><button id="sort-id">Product ID</button></th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Product rows will be populated here -->
+            </tbody>
+        </table>
+
+        <button id="add-product-btn">Add New Product</button>
+    </div>
+
+   
+</body>
+</html>

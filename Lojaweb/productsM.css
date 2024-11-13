@@ -1,0 +1,226 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Corpo da página */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #F0F4F8; /* Fundo claro e neutro */
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+    text-align: left;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    position: relative;
+}
+
+/* Container principal */
+.container {
+    background-color: #FFFFFF;
+    border-radius: 12px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    padding: 40px;
+    max-width: 1200px;
+    width: 100%;
+    box-sizing: border-box;
+    margin-top: 60px; /* Distância do topo para o container */
+}
+
+/* Estilo do cabeçalho (boas-vindas e logout) */
+#user-info {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 16px;
+}
+
+#user-info h3 {
+    font-size: 18px;
+    color: #2C3E50;
+    font-weight: 600;
+}
+
+#logout-btn {
+    padding: 8px 16px;
+    background-color: #E74C3C; /* Vermelho para logout */
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 14px;
+    margin-left: 10px;
+    transition: background-color 0.3s ease;
+}
+
+#logout-btn:hover {
+    background-color: #C0392B; /* Tom mais escuro no hover */
+}
+
+/* Título principal */
+h2 {
+    font-size: 32px;
+    color: #34495E; /* Cor de título mais sofisticada */
+    margin-bottom: 30px;
+    font-weight: 700;
+    text-align: center;
+}
+
+/* Controles de filtro e pesquisa */
+#filter-group {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+#search-bar {
+    width: 250px;
+    padding: 12px;
+    font-size: 16px;
+    border: 2px solid #BDC3C7;
+    border-radius: 8px;
+    background-color: #f7faff;
+    transition: all 0.3s ease;
+}
+
+#search-bar:focus {
+    border-color: #3498DB; /* Foco com cor azul */
+    background-color: #fff;
+}
+
+#reset-btn {
+    padding: 12px 20px;
+    font-size: 16px;
+    background-color: #8A8BF5;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#reset-btn:hover {
+    background-color: #5646F9; /* Tom mais escuro no hover */
+}
+
+/* Controles de paginação */
+#pagination-controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+}
+
+#pagination-controls button {
+    padding: 10px 15px;
+    font-size: 16px;
+    background-color: #8A8BF5;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin: 0 10px;
+}
+
+#pagination-controls button:hover {
+    background-color: #5646F9;
+}
+
+#page-number {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+/* Tabela de produtos */
+#product-list {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+}
+
+th, td {
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background-color: #34495E;
+    color: #fff;
+    font-size: 16px;
+}
+
+td {
+    background-color: #f7faff;
+    font-size: 14px;
+}
+
+td button {
+    padding: 8px 12px;
+    background-color: #8A8BF5;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+}
+
+td button:hover {
+    background-color: #5646F9;
+}
+
+/* Estilo do botão Adicionar Produto */
+#add-product-btn {
+    width: 100%;
+    padding: 12px;
+    background-color: #27AE60; /* Verde para o botão de adicionar */
+    color: #fff;
+    font-size: 16px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 20px;
+}
+
+#add-product-btn:hover {
+    background-color: #2ECC71; /* Tom mais claro no hover */
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .container {
+        padding: 20px;
+    }
+
+    #search-bar {
+        width: 180px;
+    }
+
+    #filter-group {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #reset-btn {
+        margin-top: 10px;
+    }
+
+    #pagination-controls button {
+        font-size: 14px;
+        padding: 8px 12px;
+    }
+
+    #add-product-btn {
+        font-size: 14px;
+        padding: 10px;
+    }
+}
